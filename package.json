@@ -1,0 +1,35 @@
+{
+  "name": "decision-matrix",
+  "version": "0.0.1",
+  "releaseTag": "Beta",
+  "description": "Decision Matrix Utility",
+  "main": "APP/main.js",
+  "scripts": {
+    "test": "mocha test/*/**/*.js",
+    "chromedriver": "./node_modules/.bin/chromedriver",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "latest-packages": "ncu -u && npm install"
+  },
+  "author": "Richard Morrison",
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.1.1",
+    "electron-chromedriver": "^24.0.0",
+    "jquery": "^3.6.4",
+    "mocha": "^10.2.0",
+    "npm-check-updates": "^16.10.8",
+    "selenium-webdriver": "^4.8.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}

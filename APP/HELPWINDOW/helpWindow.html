@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <title>How to use <span class="nameField"></span></title>
+  </head>
+  <body>
+    
+    <h1 class="nameField"></h1>
+    
+    <p>
+      <span class="nameField"></span> is a tool to help with decision making, and to record those decisions for inclusion in projects such as business cases.
+    </p>
+    
+    <p>
+      To learn more about the decision matrix method, visit <a class="autoLink", url='https://wikipedia.org/wiki/Decision-matrix_method'>Wikipedia</a>
+    </p>
+    
+    <h2>Getting Started</h2>
+    
+    <p>
+      When the application first loads, the user is presented with a new decision matrix (a table). The matrix isn't completely empty, it is pre-populated with some default option and criterion names, and some default importances and scores.
+    </p>
+    
+    <figure class="figure">
+      <img src="./images/new.png" class="figure-img img-fluid rounded" alt="A default decision matrix."></img>
+      <figcaption class="figure-caption text-right">A new, empty file.</figcaption>
+    </figure>
+    
+    <h3>Example</h3>
+    
+    <p>In this example, we need to decide whether to take the bus, or call a taxi. We'll fill this empty matrix with the information we'll need to make this decision.</p>
+    
+    <h4>Adding options and criteria</h4>
+    
+    <p>
+      We start by renaming the two option fields presented in the top of the matrix. We replace the text "Option 1" and "Option 2", with "Take Bus" and "Call Taxi".
+    </p>
+    
+    <p>
+      Now we have to have a think about all the factors that affect our decision. These are our criteria. When choosing between a bus and a taxi, our criteria might be:
+    <p>
+    
+    <ul>
+      <li>Low Cost</li>
+      <li>Convenient</li>
+      <li>Get Wet With Rain</li>
+    </ul>
+    
+    <p>We could easily extend this list of criteria, but we'll keep our example simple.</p>
+     
+    <p>
+      The default matrix only has space for one criterion, so we add two more with the <span class="bi-plus-circle text-success PDFhideable"></span> symbol, and add our criteria. In a few moments we will evaluate our options, and we don't want to subconsciously suffer any bias, so we'll click on "Hide Scores" in the top-right of the window. Our matrix now looks like this:
+    </p>
+    
+    <figure class="figure">
+      <img src="./images/options+criteria.png" class="figure-img img-fluid rounded" alt="A decision matrix with option and criterion names added."></img>
+      <figcaption class="figure-caption text-right">A decision matrix with option and criterion names added.</figcaption>
+    </figure>
+    
+    <h4>Criteria importance</h4>
+    
+    <p>
+      Now we need to start thinking carefully. We need to decide how important each of our criteria are, and rank our options against these criteria. These might be points of group discussion within business team. For our simple example, we decide that:
+    </p>
+    
+    <ul>
+      <li>Cost is very important, because we've not had very many shifts at work this week.</li>
+      <li>Convenience matters, but we aren't against the clock today so we don't have any strong feelings here.</li>
+      <li>It's raining today. We're attending an interview to try and get a job with contracted hours and we need to look smart. We shouldn't arrive dripping wet.</li>
+    </ul>
+    
+    <p>So, we evaluate the importance of our criteria to be:</p>
+    
+    <ul>
+      <li>Low Cost - Very Important</li>
+      <li>Convenient - Neutral</li>
+      <li>Get Wet With Rain - Important</li>
+    </ul>
+    
+    <p>... and we add these importances in the "weight" column of the table, next to the criteria names.</p>
+    
+    <h4>Option Scoring</h4>
+    
+    <p>Now we can score our options against our criteria. It is standard practice to select one of the options, and set all of the scores for each criteria to some sort of baseline. Here, we will select "Same / Baseline" for all criteria against "Take Bus". Next, we will evaluate "Call Taxi" by considering it against "Take Bus".</p>
+    
+    <ul>
+      <li>Low Cost - A taxi is much more expensive than a bus. We select "Much worse than baseline"</li>
+      <li>Convenient - A taxi operates door-to-door, so is much more convenient. We select "Much better than baseline"</li>
+      <li>Get Wet With Rain - It is raining today, and we are much less likely to get seriously wet if we take a taxi. We select "Much better than baseline"</li>
+    </ul>
+    
+    <p>
+      We're all set. If our scores are hidden we click "Show Scores" to see our final result. Given the circumstances of our day, calling a taxi appears to be the stronger option.
+    </p>
+    
+    <figure class="figure">
+      <img src="./images/complete.png" class="figure-img img-fluid rounded" alt="A completed decision."></img>
+      <figcaption class="figure-caption text-right">A completed decision matrix with a result.</figcaption>
+    </figure>
+    
+    <h2>Other Functions</h2>
+    
+    <p>The menu at the top of the application window includes the standard new/save/save-as options, and also the option to export our results as a pdf or png image for inclusion in a report.</p>
+    
+    <script src="./initialise.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

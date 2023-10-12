@@ -1,0 +1,5 @@
+APP/applicationDetails.js
+node_modules/
+package-lock.json
+out/
+.vs

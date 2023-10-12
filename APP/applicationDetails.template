@@ -1,0 +1,13 @@
+const { app } = require('electron');
+
+module.exports = {
+  name: 'namePlaceholder',
+  version: app.getVersion(),
+  releaseTag: 'releaseTagPlaceholder',
+  author: 'authorPlaceholder',
+  copyrightDate: "2023",
+  commit: 'hashPlaceholder',
+  platform: 'platformPlaceholder',
+  arch: 'archPlaceholder',
+  fileExtension: "dcn",
+}
